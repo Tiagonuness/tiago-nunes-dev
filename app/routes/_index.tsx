@@ -3,10 +3,12 @@ import { motion } from "motion/react";
 import Experience from "~/components/experience";
 import Projects from "~/components/projects";
 import Skills from "~/components/skills";
+import Typewriter from "typewriter-effect";
+import Particles from "~/components/particles"
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Portfolio" }, // coloque seu nome se quiser
+    { title: "Tiago Nunes | Dev" }, // coloque seu nome se quiser
     {
       name: "Portfolio",
       content: "Bem-vindos ao meu portfolio construido em Remix.",
@@ -19,9 +21,11 @@ export default function Index() {
     <div className="flex flex-col min-h-screen w-full">
       {/* background */}
       <div className="pointer-events-none fixed inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
         <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-500/10 blur-[100px]" />
-        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" /> */}
+        <Particles />
       </div>
 
       <div className="flex flex-col min-h-[100dvh] z-10">
@@ -37,11 +41,19 @@ export default function Index() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-6xl">Hello World.</h1>
+                <h1 className="text-6xl">
+                  <Typewriter
+                      options={{
+                          strings: ['Hello World!'],
+                          autoStart: true,
+                          loop: true,
+                      }}
+                  />
+                </h1>
                 <h1 className="text-4xl">
                   I'm{" "}
                   <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    Tifany.
+                    Tiago.
                   </span>
                 </h1>
               </motion.div>
@@ -49,19 +61,19 @@ export default function Index() {
               <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 {/* insira suas informacoes aqui */}
                 <span className="text-gray-400">
-                  Web Designer | Front-End Developer
+                  Full-Stack Developer | Cientista de Dados
                 </span>
                 <p className="text-gray-400 w-96 mt-4">
-                  Uma <b>Software Engineer</b> com foco no <b>Front-End</b>.
-                  Buscando sempre desenvolver telas robustas e responsivas.
-                  Sinto-me confortável projetando meus próprios designs e
-                  aplicando-os na prática durante o desenvolvimento.
+                Desenvolvedor <b>Full Stack</b> com experiência em criação de sistemas. 
+                Minhas competências incluem processamento de dados, até consultas SQL avançadas
+                para controle de permissões e filtros complexos. Com foco em soluções práticas, valorizo o uso inteligente de recursos, 
+                e garantindo sempre que os resultados atendam às necessidades com clareza e precisão.
                 </p>
               </motion.div>
             </div>
 
             <motion.img
-              src="/yourProfilePic.jpg"
+              src="/minhaFoto.jpg"
               className="rounded-full"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}

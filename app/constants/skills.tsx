@@ -1,27 +1,38 @@
-import { FaHtml5 as Html, FaNodeJs as NodeJs } from "react-icons/fa6";
+import { 
+    FaHtml5 as Html,
+} from "react-icons/fa6";
+
 import { IoLogoCss3 as CssIcon } from "react-icons/io";
+
 import {
     DiJavascript as Javascript,
-    DiMongodb as Database,
+    DiJqueryLogo  as JQuery,
+    DiMsqlServer as SqlServer
 } from "react-icons/di";
-import { FaReact as ReactIcon } from "react-icons/fa";
+
+import { FaReact as ReactIcon,
+        FaBootstrap as Bootstrap,
+        FaPhp as PHP,
+        FaPython as Python,
+        FaJenkins as Jenkins
+ } from "react-icons/fa";
+
 import {
-    SiNextdotjs as NextJs,
-    SiExpress as Server,
-    SiKubernetes as Kubernate,
+    SiTypescript as Typescript,
+    SiCplusplus as cplusplus,
+    SiNotepadplusplus as Notepad,
+    SiPostgresql as Postgresql,
+    SiPycharm as PyCharm,
+    SiCodeblocks as CodeBlocks
 } from "react-icons/si";
-import {
-    RiTailwindCssFill as Tailwind,
-    RiRemixRunFill as Remix,
-    RiSupabaseFill as Supabase,
-} from "react-icons/ri";
-import { GrMysql as Sql } from "react-icons/gr";
+
+import { BsMicrosoftTeams as Teams } from "react-icons/bs";
+
 import {
     FaGitAlt as Git,
-    FaDocker as Docker,
-    FaCloud as CloudCog,
     FaFigma as Figma,
 } from "react-icons/fa";
+
 import { VscVscode as VsCode } from "react-icons/vsc";
 
 
@@ -44,35 +55,37 @@ export const skills: SkillsI[] = [
             { name: "CSS", icon: CssIcon },
             { name: "JavaScript", icon: Javascript },
             { name: "React", icon: ReactIcon },
-            { name: "Next.js", icon: NextJs },
-            { name: "Remix", icon: Remix },
-            { name: "Tailwind CSS", icon: Tailwind },
+            { name: "Bootstrap", icon: Bootstrap },
+            { name: "Typescript", icon: Typescript },
+            { name: "JQuery", icon: JQuery },
         ],
     },
     {
         title: "Backend",
         skills: [
-            { name: "Node.js", icon: NodeJs },
-            { name: "Express", icon: Server },
-            { name: "Supabase", icon: Supabase },
-            { name: "SQL", icon: Sql },
-            { name: "MongoDB", icon: Database },
+            { name: "PHP", icon: PHP },
+            { name: "Python", icon: Python },
+            { name: "C++", icon: cplusplus },
+            { name: "SQL Server", icon: SqlServer },
+            { name: "PostgreSQL", icon: Postgresql},
         ],
     },
     {
         title: "DevOps",
         skills: [
             { name: "Git", icon: Git },
-            { name: "Docker", icon: Docker },
-            { name: "CI/CD", icon: CloudCog },
-            { name: "Kubernetes", icon: Kubernate },
+            { name: "Jenkins", icon: Jenkins },
+            { name: "Microsoft Teams", icon: Teams },
         ],
     },
     {
         title: "Tools",
         skills: [
             { name: "VS Code", icon: VsCode },
-            { name: "Figma", icon: Figma },
+            { name: "Figma", icon: Figma }, 
+            { name: "Notepad++", icon: Notepad }, 
+            { name: "PyCharm", icon: PyCharm }, 
+            { name: "CodeBlocks", icon: CodeBlocks }, 
         ],
     },
 ];

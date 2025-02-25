@@ -1,24 +1,20 @@
 // insira seus dados de experiencia aqui, caso nao tenha basta comentar o componente no arquivo _index.tsx ou excluir esse componente
 export const experiences = [
   {
-    company: "Hubfy",
-    period: "Out 2024 - Presente",
-    role: "Front-End Engineer",
+    company: "Presidência da Reúplica",
+    period: "Abril 2024 - Presente",
+    role: "Full-Stack Developer | Cientista de Dados",
     description:
-      "Desenvolvendo Front-End com Tailwind, React em uma aplicação Next.js.",
+      "Atuo no desenvolvimento de sistemas e automações utilizando linguagens como PHP, jQuery, Python, SQL Server e PostgreSQL. Experiência com frameworks e bibliotecas como Bootstrap, Select2 e SimpleXLSXGen, e habilidades em manipulação de arquivos .xlsx e .csv.",
   },
+];
+
+export const education = [
   {
-    company: "Autônoma",
-    period: "Jan 2022 - Presente",
-    role: "Software Engineer",
+    company: "Universidade de Brasília - UnB",
+    period: "Março 2020 - Presente",
+    role: "Curso: Engenharia da Computação",
     description:
-      "Como Desenvolvedora Fullstack autônoma, aplicava uma ampla gama de tecnologias para criar soluções web robustas e escaláveis, utilizando conhecimentos tanto em back-end quanto em front-end.",
-  },
-  {
-    company: "Centro Universitário Vale do Salgado",
-    period: "Mar 2021 - Fev 2022",
-    role: "Desenvolvedora Front-End",
-    description:
-      "Como Estagiária em Desenvolvimento Front-end na UNIVS, estou começando a minha jornada na criação de interfaces web interativas e responsivas.",
+      "",
   },
 ];
