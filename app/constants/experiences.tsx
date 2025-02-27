@@ -1,4 +1,3 @@
-// insira seus dados de experiencia aqui, caso nao tenha basta comentar o componente no arquivo _index.tsx ou excluir esse componente
 export const experiences = [
   {
     company: "Presidência da Reúplica",

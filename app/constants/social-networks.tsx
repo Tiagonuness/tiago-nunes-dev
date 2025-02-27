@@ -1,14 +1,21 @@
-import { FaLinkedin } from "react-icons/fa";
+import {FaGithub, FaLinkedin, FaInstagram,} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-// suas redes sociais
 export const socialNetworks = [
     {
-        url: "https://x.com/pinuyami",
+        url: "https://github.com/Tiagonuness",
+        icon: FaGithub,
+    },
+    {
+        url: "https://x.com/tiagonfps",
         icon: FaXTwitter,
     },
     {
-        url: "https://www.linkedin.com/in/tifanyanunes/",
+        url: "https://www.linkedin.com/in/tiago-nunes-09905724a/",
         icon: FaLinkedin,
+    },
+    {
+        url: "https://www.instagram.com/tiagonfps/",
+        icon: FaInstagram,
     }
 ];

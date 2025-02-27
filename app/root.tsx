@@ -9,7 +9,7 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import MouseMoveEffect from "./components/mouse-move-effect";
-import { Nav } from "./components/nav";
+import  Nav  from "./components/nav";
 import { Footer } from "./components/footer";
 
 export const links: LinksFunction = () => [
@@ -31,6 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../../public/favicon.ico"/>
         <Meta />
         <Links />
       </head>
@@ -40,7 +41,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <MouseMoveEffect />
         <ScrollRestoration />
         <Scripts />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
