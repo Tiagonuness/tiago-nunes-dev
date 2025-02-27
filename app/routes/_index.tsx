@@ -13,7 +13,7 @@ const contato = () => {
 }
 
 const curriculo = () => {
-  window.open("../../public/Currículo.pdf", "_blank");
+  window.open("/Currículo.pdf", "_blank");
 }
 
 export const meta: MetaFunction = () => {
@@ -86,7 +86,7 @@ export default function Index() {
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105" onClick={curriculo} asChild>
-                  <a href="../../public/Currículo.pdf" target="_blank" rel="noopener noreferrer" download="Currículo Tiago Nunes.pdf">
+                  <a href="/Currículo.pdf" target="_blank" rel="noopener noreferrer" download="Currículo Tiago Nunes.pdf">
                     Currículo
                     <UserIcon className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
