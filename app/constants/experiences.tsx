@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    company: "Presidência da Reúplica",
+    company: "Presidência da República",
     period: "Abril 2024 - Presente",
     role: "Full-Stack Developer | Cientista de Dados",
     description:

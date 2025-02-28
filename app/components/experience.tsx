@@ -4,7 +4,7 @@ import { IoIosSchool as Faculdade } from "react-icons/io";
 
 export default function ExperienceEducation() {
   return (
-    <div className="relative">
+    <div className="relative max-w-7xl mx-auto px-4">
       {experiences.map((exp, index) => (
         <div key={index} className="flex gap-6 mb-8">
           <div className="pt-1">
