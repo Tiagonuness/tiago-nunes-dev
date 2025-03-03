@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="/assests/favicon.ico" width="50" alt="Logo" />
+  <img src="/public/assests/favicon.ico" width="50" alt="Logo" />
 </p>
-<h1 align="center">Portfolio</h1>
 
 # Tiago Nunes - Desenvolvedor
 
