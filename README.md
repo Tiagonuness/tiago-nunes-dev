@@ -1,60 +1,30 @@
 <p align="center">
-  <img src="/public/favicon.ico" width="50" alt="Logo" />
+  <img src="/assests/favicon.ico" width="50" alt="Logo" />
 </p>
-<h1 align="center">Portfolio Template</h1>
+<h1 align="center">Portfolio</h1>
 
-[![Site preview](/public/assests/portfolioImage.png)](https://portfolio-pinuya.vercel.app/)
-Meu template de portfolio para voces. Construido com [Remix](https://remix.run/), [TailwindCSS](https://tailwindcss.com/) [Framer Motion](https://www.framer.com/motion/). [Veja o site deployado](https://portfolio-pinuya.vercel.app/).
+# Tiago Nunes - Desenvolvedor
 
-O intuito deste projeto é ajudar programadores que ainda não possuem um portfólio. Por isso, construí de forma simples, especialmente para quem está iniciando com HTML e React, para que consiga entender o funcionamento do projeto.
-Tentei simplificar ao máximo e deixei o código todo comentado para facilitar o entendimento.
-Caso você utilize este projeto como seu portfólio, peço que leia atentamente este arquivo README.
+👋 Olá! Eu sou o Tiago Nunes, um desenvolvedor apaixonado por tecnologia e por criar soluções inovadoras. Este repositório é o meu portfólio pessoal, onde compartilho alguns dos meus projetos e habilidades.
 
-## Como Fazer um Fork deste Repositório
+## � Sobre Mim
 
-### Faça um Fork
+- 🧑‍💻 Desenvolvedor Full Stack com experiência em diversas tecnologias.
+- 🎓 Estudante da Universidade de Brasília - UnB | Engenharia da computação.
+- 🌍 Localizado em Brasília-DF.
+- 📫 Como me encontrar: Insta: @tiagonfps, email: tiagonunesyou18@gmail.com.
 
-1. Acesse o repositório original no GitHub.
-2. No canto superior direito, clique no botão "Fork".
-3. Isso criará uma cópia do repositório na sua conta do GitHub.
+## 🛠 Tecnologias e Ferramentas
 
-### Clone o Repositório Forkado
+Aqui estão algumas das tecnologias e ferramentas que utilizo no meu dia a dia:
 
-Agora que você tem uma cópia na sua conta, clone o repositório para sua máquina local:
+- **Frontend:** HTML, CSS, JavaScript, React, Typescript, Tailwindcss, Bootstrap
+- **Backend:** Python, PHP, C++
+- **Banco de Dados:** SQL Server, PostgreSQL
+- **Ferramentas de Desenvolvimento:** Git, VS Code, Figma, Notepad++
 
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
+## � Projetos Destacados
 
-Troque seu-usuario e seu-repositorio pelo nome correto do seu fork.
+Aqui estão alguns dos projetos que eu desenvolvi e que estão disponíveis neste repositório:
 
-### Acesse a Pasta do Projeto
-
-```bash
-cd seu-repositorio
-```
-
-## Instale as Dependências
-
-```bash
-bun install
-```
-
-Quando terminar, inicie um servidor local com:
-
-```bash
-bun dev
-```
-
-## Permissões
-
-Eu concordo com qualquer pessoa que use o código ou partes do código em seu próprio site, é de código aberto para que as pessoas possam aprender com ele e adaptá-lo. No entanto, eu encorajo você a modificar o tema e os componentes para torná-lo seu.
-Se você estiver usando o design do site praticamente inalterado, eu apreciaria ser creditado como o designer do site. 😁
-
-Não dou permissão para apresentar nenhum dos meus projetos como se fosse seu (isso está sendo usado ativamente como meu site de portfólio e esses são meus projetos reais nos quais trabalhei).
-
-### Mostre seu apoio
-
-Dê um ⭐ se você gosta deste site!
-
-Desenvolvido com 💜 por **Tifany Nunes**.
+1. **Projeto 1:** INFO EMENDAS - Sistema criado para melhor comunicação entre a Presidência da República e os ministérios.

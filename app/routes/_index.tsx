@@ -21,7 +21,7 @@ export const meta: MetaFunction = () => {
     { title: "Tiago Nunes | Dev" },
     {
       name: "Portfolio",
-      content: "Bem-vindos ao meu portfolio construido em Remix.",
+      content: "Bem-vindos ao meu portfolio.",
     },
   ];
 };
@@ -96,6 +96,7 @@ export default function Index() {
 
             <motion.img
               src="/foto.jpg"
+              alt="Desenvolvedor"
               className="rounded-full"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
