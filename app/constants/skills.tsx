@@ -23,7 +23,8 @@ import {
     SiNotepadplusplus as Notepad,
     SiPostgresql as Postgresql,
     SiPycharm as PyCharm,
-    SiCodeblocks as CodeBlocks
+    SiCodeblocks as CodeBlocks,
+    SiTailwindcss as Tailwindcss
 } from "react-icons/si";
 
 import { BsMicrosoftTeams as Teams } from "react-icons/bs";
@@ -58,6 +59,7 @@ export const skills: SkillsI[] = [
             { name: "Bootstrap", icon: Bootstrap },
             { name: "Typescript", icon: Typescript },
             { name: "JQuery", icon: JQuery },
+            { name: "Tailwindcss", icon: Tailwindcss },
         ],
     },
     {

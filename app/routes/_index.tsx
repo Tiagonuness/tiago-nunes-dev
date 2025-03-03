@@ -41,7 +41,7 @@ export default function Index() {
       <div className="flex flex-col min-h-[100dvh] z-10 mt-6">
         <section
           id="hero"
-          className="h-screen flex flex-col items-center justify-center gap-16 py-20"
+          className="h-screen flex flex-col items-center justify-center gap-16 py-20 max-w-7xl mx-auto px-4"
         >
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <div>
@@ -95,7 +95,7 @@ export default function Index() {
             </div>
 
             <motion.img
-              src="/minhaFoto.jpg"
+              src="/foto.jpg"
               className="rounded-full"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
