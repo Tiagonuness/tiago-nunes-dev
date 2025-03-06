@@ -33,7 +33,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Tiago Nunes - Desenvolvedor Full Stack" />
         <meta property="og:description" content="Portfólio de Tiago Nunes, desenvolvedor Full Stack especializado em React, PHP, PostgreSQL e SQL Server." />
-        <meta property="og:image" content="https://tiago-nunes-dev.vercel.app/images/og-image.jpg" />
         <meta property="og:url" content="https://tiago-nunes-dev.vercel.app/" />
         <link rel="icon" type="image/x-icon" href="/assests/favicon.ico"/>
         <Meta />
@@ -44,7 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Tiago Nunes",
-            "jobTitle": "Desenvolvedor Full Stack",
+            "jobTitle": "Desenvolvedor Full Stack ",
             "url": "https://tiago-nunes-dev.vercel.app",
             "sameAs": [
               "https://github.com/Tiagonuness",
