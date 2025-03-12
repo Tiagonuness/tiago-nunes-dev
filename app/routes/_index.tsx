@@ -50,7 +50,7 @@ export default function Index() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-6xl">
+                <h1 className="text-6xl text-gray-400">
                   <Typewriter
                       options={{
                           strings: ['Hello World!'],
@@ -59,7 +59,7 @@ export default function Index() {
                       }}
                   />
                 </h1>
-                <h1 className="text-4xl">
+                <h1 className="text-4xl text-gray-400">
                   I'm{" "}
                   <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                     Tiago Nunes.
@@ -79,13 +79,13 @@ export default function Index() {
                 </p>
               </motion.div>
               <div className="flex gap-4 flex-wrap justify-center w-full md:w-max mt-4">
-                <Button size="lg" className="group transition-all duration-300 hover:scale-105 bg-gradient-to-b dark:from-blue-300 dark:to-blue-500" onClick={contato} asChild>
+                <Button size="lg" className="group transition-all duration-300 hover:scale-105 bg-gradient-to-b dark:from-blue-300 dark:to-blue-500 text-gray-400" onClick={contato} asChild>
                   <a href="#contact" className="text-black">
                     Contato
                     <Phone className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105" onClick={curriculo} asChild>
+                <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105 text-gray-400" onClick={curriculo} asChild>
                   <a href="/Currículo.pdf" target="_blank" rel="noopener noreferrer" download="Currículo Tiago Nunes.pdf">
                     Currículo
                     <UserIcon className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -123,7 +123,7 @@ export default function Index() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl text-center">Habilidades e experiência</h1>
+          <h1 className="text-4xl text-center text-gray-400">Habilidades e experiência</h1>
 
           <div className="flex flex-col gap-28">
             {/* componente de skills */}
