@@ -13,7 +13,7 @@ export default function ExperienceEducation() {
 
           <div className="flex-1">
             <div className="flex flex-row gap-2 items-center">
-              <h3 className="text-2xl font-semibold">{exp.company}</h3>
+              <h3 className="text-2xl font-semibold text-white">{exp.company}</h3>
               <span className="text-sm font-light text-gray-400">
                 {exp.period}
               </span>
@@ -45,7 +45,7 @@ export default function ExperienceEducation() {
 
           <div className="flex-1">
             <div className="flex flex-row gap-2 items-center">
-              <h3 className="text-2xl font-semibold">{exp.company}</h3>
+              <h3 className="text-2xl font-semibold text-white">{exp.company}</h3>
               <span className="text-sm font-light text-gray-400">
                 {exp.period}
               </span>

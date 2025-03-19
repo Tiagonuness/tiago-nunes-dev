@@ -9,7 +9,7 @@ const Home = () => {
             <header className="hidden xl:fixed xl:block top-0 left-0 right-0 z-50 w-32">
                 <nav className="px-4 py-4">
                     <div className="mt-12 flex items-center gap-4 ">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col text-white">
                             {socialNetworks.map((({ url: socialMediaUrl, icon: SocialMediaIcon }) => (
                                 <Link
                                 to={socialMediaUrl}

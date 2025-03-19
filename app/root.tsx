@@ -35,6 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta property="og:description" content="Portfólio de Tiago Nunes, desenvolvedor Full Stack especializado em React, PHP, PostgreSQL e SQL Server." />
         <meta property="og:url" content="https://tiago-nunes-dev.vercel.app/" />
         <link rel="icon" type="image/x-icon" href="/assests/favicon.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></link>
         <Meta />
         <Links />
         <script type="application/ld+json">

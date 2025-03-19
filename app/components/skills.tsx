@@ -32,7 +32,7 @@ const SkillCategory = ({
   skills: SkillI[];
 }) => (
   <div className="flex items-center flex-col">
-    <h3 className="text-lg font-semibold">{title}</h3>
+    <h3 className="text-lg font-semibold text-white">{title}</h3>
     <div className="p-4">
       <div className="flex flex-wrap gap-4">
         {skills.map((skill) => (

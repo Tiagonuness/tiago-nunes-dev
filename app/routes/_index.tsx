@@ -50,7 +50,7 @@ export default function Index() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-6xl">
+                <h1 className="text-6xl text-white">
                   <Typewriter
                       options={{
                           strings: ['Hello World!'],
@@ -59,7 +59,7 @@ export default function Index() {
                       }}
                   />
                 </h1>
-                <h1 className="text-4xl">
+                <h1 className="text-4xl text-white">
                   I'm{" "}
                   <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                     Tiago Nunes.
@@ -85,7 +85,7 @@ export default function Index() {
                     <Phone className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105" onClick={curriculo} asChild>
+                <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105 text-white" onClick={curriculo} asChild>
                   <a href="/Currículo.pdf" target="_blank" rel="noopener noreferrer" download="Currículo Tiago Nunes.pdf">
                     Currículo
                     <UserIcon className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -123,7 +123,7 @@ export default function Index() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl text-center">Habilidades e experiência</h1>
+          <h1 className="text-4xl text-center text-white">Habilidades e experiência</h1>
 
           <div className="flex flex-col gap-28">
             {/* componente de skills */}
@@ -140,7 +140,7 @@ export default function Index() {
           id="projects"
           className="mt-20 flex flex-col items-center justify-center"
         >
-          <h1 className="text-4xl">Projetos</h1>
+          <h1 className="text-4xl text-white">Projetos</h1>
 
           <Projects />
         </motion.section>
