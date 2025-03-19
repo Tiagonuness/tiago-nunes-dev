@@ -19,7 +19,7 @@ const ProjectCard: React.FC<{ project: ProjectI }> = ({ project }) => {
         </h3>
         <p className="text-gray-400 mb-4">{project.description}</p>
 
-        <div className="flex gap-2">
+        <div className="flex text-white gap-2">
           {project.skills.map((skill, index) => (
             <div
               key={index}
@@ -38,7 +38,7 @@ const ProjectCard: React.FC<{ project: ProjectI }> = ({ project }) => {
           ))}
         </div>
 
-        <div className="flex gap-4 mt-4">
+        <div className="flex text-white gap-4 mt-4">
           {project.liveUrl && (
             <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105" asChild>
               <a href={project.liveUrl} rel="noopener noreferrer" target="_blank">
