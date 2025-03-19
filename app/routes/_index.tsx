@@ -79,7 +79,7 @@ export default function Index() {
                 </p>
               </motion.div>
               <div className="flex gap-4 flex-wrap justify-center w-full md:w-max mt-4">
-                <Button size="lg" className="group transition-all duration-300 hover:scale-105 text-white" onClick={contato} asChild>
+                <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105 text-white" onClick={contato} asChild>
                   <a href="#contact">
                     Contato
                     <Phone className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
