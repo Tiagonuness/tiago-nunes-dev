@@ -66,7 +66,7 @@ export const projects: ProjectI[] = [
             { name: "SQL Server", icon: SqlServer },
             { name: "Teams", icon: Teams },
         ],
-        liveUrl: "https://info-emendas.presidencia.gov.br/",
+        liveUrl: "",
         repoUrl: "",
     },
     {
