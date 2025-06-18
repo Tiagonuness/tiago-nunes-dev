@@ -7,13 +7,14 @@ import { Button } from "~/components/ui/button";
 import Typewriter from "typewriter-effect";
 import ParticlesBackground from "../components/particles";
 import { UserIcon, Phone } from 'lucide-react';
+import { FaArrowDown } from 'react-icons/fa';
 
 const contato = () => {
   window.open("https://wa.me/5561992451421", "_blank");
 }
 
 const curriculo = () => {
-  window.open("/Currículo.pdf", "_blank");
+  window.open("/curriculo - Tiago Nunes.pdf", "_blank");
 }
 
 export const meta: MetaFunction = () => {
@@ -72,14 +73,13 @@ export default function Index() {
                   Full-Stack Developer | Cientista de Dados
                 </span>
                 <p className="text-gray-400 w-96 mt-4">
-                Desenvolvedor <b>Full Stack</b> com experiência em criação de sistemas. 
-                Minhas competências incluem processamento de dados, até consultas SQL avançadas
-                para controle de permissões e filtros complexos. Com foco em soluções práticas, valorizo o uso inteligente de recursos, 
-                e garantindo sempre que os resultados atendam às necessidades com clareza e precisão.
+                Desenvolvedor <b>Full Stack</b> com experiência em criação de sistemas, 
+                processamento de dados, além de controle avançado e visualização eficiente das informações.
+                Priorizo soluções práticas e eficazes, com foco em resultados claros e objetivos.
                 </p>
               </motion.div>
               <div className="flex gap-4 flex-wrap justify-center w-full md:w-max mt-4">
-                <Button size="lg" className="group transition-all duration-300 hover:scale-105 bg-gradient-to-b dark:from-blue-300 dark:to-blue-500 text-gray-400" onClick={contato} asChild>
+                <Button size="lg" variant="outline" className="group transition-all duration-300 hover:scale-105 text-white" onClick={contato} asChild>
                   <a href="#contact" className="text-black">
                     Contato
                     <Phone className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -111,7 +111,7 @@ export default function Index() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <div className="w-1 h-12 bg-gradient-to-b from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 rounded-full animate-pulse"></div>
+            <FaArrowDown className="text-4xl text-blue-600 dark:text-blue-400 animate-pulse" />
           </motion.div>
         </section>
 

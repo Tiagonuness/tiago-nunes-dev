@@ -3,6 +3,9 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "overrides": {
+    "postcss-selector-parser": "^6.0.13"
+  },
   "scripts": {
     "build": "remix vite:build",
     "dev": "remix vite:dev",
@@ -12,7 +15,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
-    "@remix-run/node": "^2.15.3",
+    "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.15.3",
     "@remix-run/serve": "^2.15.3",
     "cacache": "^19.0.1",

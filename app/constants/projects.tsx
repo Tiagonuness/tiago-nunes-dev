@@ -30,6 +30,7 @@ import { BsMicrosoftTeams as Teams } from "react-icons/bs";
 
 import {
     FaGitAlt as Git,
+    FaFileExcel as Excel
 } from "react-icons/fa";
 
 export interface SkillI {
@@ -51,7 +52,7 @@ export const projects: ProjectI[] = [
     {
         title: "INFO EMENDAS",
         description:
-            "Sistema criado para melhor comunicação entre a Presidência da República e os ministérios.",
+            "Sistema de gestão de pagamentos de emendas parlamentares (RP6, RP7) e emendas de comissões (RP8), acompanhando fluxos financeiros entre a SRI e o Tesouro Nacional, execuções por Ministérios Gestores e indicações orçamentárias do Congresso.",
         imageUrl: "/assests/infoEmendas3.png",
         skills: [
             { name: "HTML", icon: Html },
@@ -66,18 +67,20 @@ export const projects: ProjectI[] = [
             { name: "SQL Server", icon: SqlServer },
             { name: "Teams", icon: Teams },
         ],
-        liveUrl: "https://info-emendas.presidencia.gov.br/",
+        liveUrl: "",
         repoUrl: "",
     },
     {
-        title: "EM BREVE",
+        title: "Aplicativo Formatador de Planilhas Excel para Controle de Validação",
         description:
-            "",
-        imageUrl: "/assests/images.png",
+            "Aplicação gráfica desenvolvida em Python, utilizando a biblioteca CustomTkinter, que permite ao usuário selecionar múltiplos arquivos .xlsx e aplicar formatações e regras específicas a cada planilha.",
+        imageUrl: "/assests/aplicativoFormatador.png",
         skills: [
+            { name: "Python", icon: Python },
+            { name: "Excel", icon: Excel }
         ],
         liveUrl: "",
-        repoUrl: "",
+        repoUrl: "https://github.com/Tiagonuness/planilhaFormulas",
     },
     {
         title: "EM BREVE",

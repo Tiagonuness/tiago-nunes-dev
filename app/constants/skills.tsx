@@ -32,10 +32,13 @@ import { BsMicrosoftTeams as Teams } from "react-icons/bs";
 import {
     FaGitAlt as Git,
     FaFigma as Figma,
+    FaAngular as Angular,
+    FaRust as Rust
 } from "react-icons/fa";
 
 import { VscVscode as VsCode } from "react-icons/vsc";
 
+import { TbBrandCSharp } from "react-icons/tb";
 
 export interface SkillI {
   name: string;
@@ -60,6 +63,7 @@ export const skills: SkillsI[] = [
             { name: "Typescript", icon: Typescript },
             { name: "JQuery", icon: JQuery },
             { name: "Tailwindcss", icon: Tailwindcss },
+            { name: "Angular", icon: Angular },
         ],
     },
     {
@@ -70,6 +74,8 @@ export const skills: SkillsI[] = [
             { name: "C++", icon: cplusplus },
             { name: "SQL Server", icon: SqlServer },
             { name: "PostgreSQL", icon: Postgresql},
+            { name: "C#", icon: TbBrandCSharp },
+            { name: "Rust", icon: Rust },
         ],
     },
     {
