@@ -31,7 +31,7 @@ const Home = () => {
                     <div className="w-1 h-12 bg-gradient-to-b from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 rounded-full animate-pulse"></div>
                     </motion.div>
 
-                    <div className="text-sm mt-12 mx-2 tracking-widest -rotate-90 transform origin-left">
+                    <div className="text-sm text-white mt-12 mx-2 tracking-widest -rotate-90 transform origin-left">
                         Me Siga
                     </div>
                 </nav>
