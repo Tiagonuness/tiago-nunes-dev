@@ -36,7 +36,10 @@ import {
     FaRust as Rust
 } from "react-icons/fa";
 
-import { VscVscode as VsCode } from "react-icons/vsc";
+import { 
+    VscVscode as VsCode,
+    VscAzureDevops as AzureDevops,
+ } from "react-icons/vsc";
 
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -84,6 +87,7 @@ export const skills: SkillsI[] = [
             { name: "Git", icon: Git },
             { name: "Jenkins", icon: Jenkins },
             { name: "Microsoft Teams", icon: Teams },
+            { name: "Azure DevOps", icon: AzureDevops },
         ],
     },
     {

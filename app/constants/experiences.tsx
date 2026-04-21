@@ -1,26 +1,34 @@
-export const experiences = [
+export interface ExperienceItem {
+  company: string;
+  period: string;
+  role: string;
+  description: string | string[];
+}
+
+export const experiences: ExperienceItem[] = [
   {
     company: "Ministério da Saúde",
     period: "Junho 2025 - Presente",
-    role: "Engenheiro de Software | Cientista de Dados",
-    description:
-      "Atuo no desenvolvimento do Sistema de acompanhamento das demandas orçamentárias dos entes federados, atrelando a informação às dotações orçamentárias, visando apoiar o gerenciamento desses recursos e o seu monitoramento de forma constante. Além de auxiliar nas tarefas técnicas da SE/MS, diminuindo riscos operacionais interno e externo que norteiam a rotina, também produzem relatórios gerenciais de apoio à alta gestão do Ministério.",
+    role: "Desenvolvedor Full Stack | Engenheiro de Software | Cientista de Dados | DBA",
+    description: [
+      "Atuo no desenvolvimento do Sistema de Acompanhamento das Demandas Orçamentárias dos Entes Federados, integrando informações às dotações orçamentárias para fortalecer o monitoramento e a governança dos recursos públicos. Minha atuação envolve a construção de pipelines de dados, validações automatizadas, regras de negócio, rastreabilidade das informações e geração de relatórios gerenciais e dashboards utilizados pela alta gestão.",
+      "Também atuo no desenvolvimento de um sistema estratégico na Secretaria de Atenção Especializada à Saúde, utilizando Laravel para consolidação e análise de dados assistenciais. O sistema contempla a geração de notas informativas automatizadas, dashboards analíticos, relatórios dinâmicos, integração entre bases distintas e mecanismos de auditoria e rastreabilidade.",
+    ],
   },
   {
     company: "Presidência da República",
     period: "Abril 2024 - Junho 2025",
-    role: "Full-Stack Developer | Cientista de Dados",
+    role: "Desenvolvedor Full Stack | Engenheiro de Dados | DBA",
     description:
-      "Atuo no desenvolvimento de sistemas web com foco na organização, controle e visualização eficiente de dados, utilizando PHP, jQuery, Bootstrap e a biblioteca de padrões digitais do governo para criar interfaces responsivas e alinhadas às diretrizes públicas. Sou responsável pela implementação de funcionalidades front-end e back-end, modelagem e otimização de bancos de dados (SQL Server e PostgreSQL), além de automatizações com Python para ganho de eficiência. Entre os projetos desenvolvidos, destaco sistemas de gestão de pagamentos de emendas parlamentares (RP6, RP7) e emendas de comissões (RP8), acompanhando fluxos financeiros entre a SRI e o Tesouro Nacional, execuções por Ministérios Gestores e indicações orçamentárias do Congresso, fornecendo subsídios para decisões estratégicas e redução de riscos operacionais na SEAG/DEO/SRI.",
+      "Atuei no desenvolvimento de sistemas web com foco na organização, controle e visualização de dados governamentais, utilizando PHP, jQuery e SQL. Fui responsável pela modelagem e otimização de bancos de dados, além da implementação de automações para ganho de eficiência operacional. Desenvolvi soluções para gestão de emendas parlamentares, acompanhando fluxos entre a SRI, o Tesouro Nacional e ministérios gestores, contribuindo para maior transparência, controle e apoio à tomada de decisão estratégica.",
   },
 ];
 
-export const education = [
+export const education: ExperienceItem[] = [
   {
     company: "Universidade de Brasília - UnB",
     period: "Março 2020 - Presente",
     role: "Curso: Engenharia da Computação",
-    description:
-      "",
+    description: "",
   },
 ];

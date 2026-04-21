@@ -1,3 +1,4 @@
+import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -5,12 +6,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
-
-import "./tailwind.css";
 import MouseMoveEffect from "./components/mouse-move-effect";
-import  Nav  from "./components/nav";
-import { Footer } from "./components/footer";
+import Nav from "./components/nav";
+import "./tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -27,15 +25,21 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="Tiago Nunes - Desenvolvedor Full Stack" />
-        <meta property="og:description" content="Portfólio de Tiago Nunes, desenvolvedor Full Stack especializado em React, PHP, PostgreSQL e SQL Server." />
+        <meta
+          property="og:description"
+          content="Portfólio de Tiago Nunes, desenvolvedor Full Stack especializado em automação de processos, dados e sistemas institucionais."
+        />
         <meta property="og:url" content="https://tiago-nunes-dev.vercel.app/" />
-        <link rel="icon" type="image/x-icon" href="/assests/favicon.ico"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></link>
+        <link rel="icon" type="image/x-icon" href="/assests/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
         <Meta />
         <Links />
         <script type="application/ld+json">
@@ -44,7 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Tiago Nunes",
-            "jobTitle": "Desenvolvedor Full Stack ",
+            "jobTitle": "Desenvolvedor Full Stack",
             "url": "https://tiago-nunes-dev.vercel.app",
             "sameAs": [
               "https://github.com/Tiagonuness",
@@ -62,7 +66,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <MouseMoveEffect />
         <ScrollRestoration />
         <Scripts />
-        {/* <Footer /> */}
       </body>
     </html>
   );

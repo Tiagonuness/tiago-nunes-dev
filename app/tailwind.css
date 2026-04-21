@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-slate-950 text-slate-100;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -13,4 +13,12 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+}
+
+::selection {
+  @apply bg-cyan-300/30 text-white;
 }

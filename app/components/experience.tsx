@@ -1,73 +1,91 @@
-import { MdWork } from "react-icons/md";
-import { experiences, education } from "../constants/experiences";
 import { IoIosSchool as Faculdade } from "react-icons/io";
+import { MdWork } from "react-icons/md";
+import { education, experiences } from "../constants/experiences";
+
+const renderDescription = (description: string | string[]) => {
+  if (Array.isArray(description)) {
+    return description.map((paragraph) => (
+      <p key={paragraph} className="text-sm leading-7 text-slate-300">
+        {paragraph}
+      </p>
+    ));
+  }
+
+  if (!description) {
+    return null;
+  }
+
+  return <p className="text-sm leading-7 text-slate-300">{description}</p>;
+};
+
+const TimelineCard = ({
+  company,
+  period,
+  role,
+  description,
+  icon: Icon,
+  showConnector,
+}: {
+  company: string;
+  period: string;
+  role: string;
+  description: string | string[];
+  icon: React.ElementType;
+  showConnector: boolean;
+}) => {
+  return (
+    <div className="relative grid gap-5 md:grid-cols-[72px_1fr]">
+      <div className="relative flex justify-center">
+        <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-cyan-300/20 bg-cyan-300/10 text-cyan-200 shadow-[0_10px_30px_rgba(34,211,238,0.12)]">
+          <Icon className="text-2xl" />
+        </div>
+        {showConnector && (
+          <div className="absolute top-16 hidden h-[calc(100%-2rem)] w-px bg-gradient-to-b from-cyan-300/40 via-white/10 to-transparent md:block" />
+        )}
+      </div>
+
+      <article className="rounded-[28px] border border-white/10 bg-slate-950/55 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.28)] backdrop-blur-sm transition duration-300 hover:border-cyan-300/30 hover:bg-slate-900/70">
+        <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+          <div>
+            <h3 className="text-2xl font-semibold text-white">{company}</h3>
+            <p className="mt-2 text-sm font-medium uppercase tracking-[0.18em] text-cyan-200">{role}</p>
+          </div>
+          <span className="inline-flex w-fit whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-slate-300">
+            {period}
+          </span>
+        </div>
+
+        <div className="mt-5 space-y-4">{renderDescription(description)}</div>
+      </article>
+    </div>
+  );
+};
 
 export default function ExperienceEducation() {
   return (
-    <div className="relative max-w-7xl mx-auto px-4">
+    <div className="mx-auto flex max-w-6xl flex-col gap-8">
       {experiences.map((exp, index) => (
-        <div key={index} className="flex gap-6 mb-8">
-          <div className="pt-1">
-            <MdWork className="text-2xl text-gray-600" />
-          </div>
-
-          <div className="flex-1">
-            <div className="flex flex-row gap-2 items-center">
-              <h3 className="text-2xl font-semibold text-white">{exp.company}</h3>
-              <span className="text-sm font-light text-gray-400">
-                {exp.period}
-              </span>
-            </div>
-
-            <div className="mt-2">
-              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                {exp.role}
-              </span>
-
-              <p className="text-gray-400 mt-2 max-w-prose">
-                {exp.description}
-              </p>
-            </div>
-
-            {index !== experiences.length - 1 && (
-              <div className="text-3xl tracking-widest text-center rotate-90 mt-4 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                ...
-              </div>
-            )}
-          </div>
-        </div>
+        <TimelineCard
+          key={`${exp.company}-${exp.period}`}
+          company={exp.company}
+          period={exp.period}
+          role={exp.role}
+          description={exp.description}
+          icon={MdWork}
+          showConnector={index !== experiences.length - 1 || education.length > 0}
+        />
       ))}
+
       {education.map((exp, index) => (
-        <div key={index} className="flex gap-6 mb-8">
-          <div className="pt-1">
-            <Faculdade className="text-2xl text-gray-600" />
-          </div>
-
-          <div className="flex-1">
-            <div className="flex flex-row gap-2 items-center">
-              <h3 className="text-2xl font-semibold text-white">{exp.company}</h3>
-              <span className="text-sm font-light text-gray-400">
-                {exp.period}
-              </span>
-            </div>
-
-            <div className="mt-2">
-              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                {exp.role}
-              </span>
-
-              <p className="text-gray-400 mt-2 max-w-prose">
-                {exp.description}
-              </p>
-            </div>
-
-            {index !== experiences.length - 1 && (
-              <div className="text-3xl tracking-widest text-center rotate-90 mt-4 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                ...
-              </div>
-            )}
-          </div>
-        </div>
+        <TimelineCard
+          key={`${exp.company}-${exp.period}`}
+          company={exp.company}
+          period={exp.period}
+          role={exp.role}
+          description={exp.description}
+          icon={Faculdade}
+          showConnector={index !== education.length - 1}
+        />
       ))}
     </div>
   );
